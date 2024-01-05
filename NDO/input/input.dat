@@ -1,0 +1,30 @@
+**********************************************************
+****length_and_type           8          integer
+****Below are the input parameter of type integer
+**********************************************************
+Nstep    100            !Number of search step
+random_Seed   0         ! if random_Seed=0 , do not set random_Seed
+parameterLen  5         !The number of the neuron
+lineSearchNum    3      !if lineSearchNum>0 ,run the line search, if not, search with step define in AllTau1
+CG_direction_flag 3     !when use CG method, CG_direction_flag can be the value of 1, 2, 3, 4 or 5
+delta_step_for_save 5   !step for output saving data 
+CGLLSnum       100      !When search_method=NG, the max iteration for the inversion of the metric matrix
+LBFGS_length   250      !memory in the LBFGS method
+**********************************************************
+****length_and_type           4         real*8
+****Below are the input parameter of type real*8
+**********************************************************
+elementScal  0.01       !initial value of the search point
+diag_small_number 0     !When search_method=NG, add small number to the metric the insure the convergence of the inversing metric
+CGLLSerror -1d-8        !When search_method=NG, the error for the inverse of the metric, if <0, do not check the error
+stop_error  1d-8        !The criterion used to stop the training 
+**********************************************************
+****length_and_type          5          character
+****Below are the input parameter of type character
+**********************************************************
+model            RBM     !Other type: RBM  MLE
+search_method    NG      !Other type: GM RGM CG LBFGS NG
+input_address    "1.dat"  
+read_address      null   !if null start a new search, in read_address="point.dat" read the data in save/point.dat
+AllTau1    d=0.01|0.05   !running step use when lineSearchNum<0, use "|" to separate the value
+

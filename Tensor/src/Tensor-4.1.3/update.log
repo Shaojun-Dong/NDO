@@ -1,0 +1,25 @@
+2022-10-4
+
+modify the code in Tensor_include/product.f90:
+   ProductTensorRoutine
+   case(2)
+   case(3)
+   case(5)
+   case(7)
+Tesor ::A, B
+A is [1,1,1,1] tensor
+B is [1] tensor
+A*B will regard as number ,but the dimension of the result will set to the dimension of A
+
+Tesor ::A, B
+A is [1] tensor
+B is [1,1,1,1] tensor
+A*B will regard as number ,but the dimension of the result will set to the dimension of B
+
+
+if A or B is [1], it will be regard as a number
+
+2023-7-7
+
+fix a bug of T+T, the bug is
+if T is symmetry tensor, but there is no block in T, T+T return a 0 block tensro
