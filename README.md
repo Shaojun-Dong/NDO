@@ -15,7 +15,9 @@ To compile the code, do as the following:
 
 -----------
 cd Tensor 
+
 make
+
 ------------
 
 2. go to NDO and modify the file of makefile, set the value "PACKAGE" to link with lapack(or MKL)
@@ -23,8 +25,10 @@ make
 PACKAGE:  links with  lapack and blas
 
 and then input
+
 -----------
 make
+
 ------------
 
 3. Then you can run the NDO with "./run"
