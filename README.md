@@ -1,6 +1,6 @@
 
 
-This collection of fortran files is aimed at making computing the Neural Density Operators (NDO) for quantum tomography straightforward, simple and fast. The most important files or  documents are:
+This collection of FORTRAN files is aimed at trainning the Neural Density Operators (NDO) for quantum tomography straightforward, simple and fast. The most important files or  documents are:
 
 ------------------------------
 
@@ -8,7 +8,7 @@ Tensor/               : The basic code of tensor and optimization tools
 
 NDO/density.f90       : define the reduced density matrix from NDO
 
-NDO/TargetElement.f90 : define the basic operation that are used in Tensor/src/optimization-2.1.9/GeneralOptimizationElement.f90
+NDO/TargetElement.f90 : define the basic operations that are used in Tensor/src/optimization-2.1.9/GeneralOptimizationElement.f90
 
 NDO/TargetFunction.f90: define the cost function of our problems
 
