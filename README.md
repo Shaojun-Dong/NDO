@@ -18,13 +18,13 @@ Datasets.nb           : Generation of synthetic datasets for different types of 
 
 To compile the code, do as the following:
 
-1. make the tensor lib with the code below
+1. Make the tensor lib with the code below
 
 cd Tensor 
 
 make
 
-2. go to NDO and modify the file of makefile, set the value "PACKAGE" to link with lapack(or MKL)
+2. Go to NDO and modify the file of makefile, set the value "PACKAGE" to link with lapack(or MKL)
 
 PACKAGE:  links with  lapack and blas
 
