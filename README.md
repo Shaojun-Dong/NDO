@@ -16,7 +16,7 @@ Datasets.nb           : Generation of synthetic datasets for different types of 
 
 ------------------------------
 
-To compile the code, do as the following:
+To compile the code, do as following:
 
 1. Make the tensor lib with the code below
 
