@@ -6,7 +6,7 @@ This collection of FORTRAN files is aimed at trainning the Neural Density Operat
 
 Tensor/               : The basic code of tensor and optimization tools.
 
-NDO/density.f90       : define the reduced density matrix from NDOs.
+NDO/density.f90       : define the reduced density matrix from NDO.
 
 NDO/TargetElement.f90 : define the basic operations that are used in Tensor/src/optimization-2.1.9/GeneralOptimizationElement.f90.
 
